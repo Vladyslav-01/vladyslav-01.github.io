@@ -1,0 +1,2 @@
+"use strict";var logger=function(){console.log("gooode")};logger();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsibG9nZ2VyIiwiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6ImFBQUEsSUFBTUEsT0FBUyxXQUNYQyxRQUFRQyxJQUFJLFdBQ2hCRiIsImZpbGUiOiJtYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbG9nZ2VyID0gKCkgPT4ge1xyXG4gICAgY29uc29sZS5sb2coJ2dvb29kZScpO1xyXG59XHJcblxyXG5sb2dnZXIoKTsiXX0=
