@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start" : "gulp",
-    "build" : "gulp --production"
+    "start": "gulp",
+    "build": "gulp --production"
   },
   "babel": {
     "presets": [
@@ -24,6 +24,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-fonter": "^0.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",

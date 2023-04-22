@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-color: $header-background;
+
+    &__logo {
+        background-color: $white;
+        @include flex-center;
+        width: 4vw;
+        height: 4vw;
+        border-radius: 30%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__logo-img {
+        width: 3vw;
+    }
+
+    &__theme-btn {
+        width: 5vh;
+        height: 5vh;
+        border: 1px solid $white;
+        border-radius: 2rem;
+        background-color: $white;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: $white-selected;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+
+    &__theme-img--moon {
+        width: 5vh;
+    }
+
+    &__theme-img--sun {
+        width: 5vh;
+        display: none;
+    }
+}
+
+.nav {
+    width: 30%;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        gap: 15%;
+    }
+    
+    &__list-item a {
+        @include font-light;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: $font-hover;
+            transition: 0.5s;
+            animation-duration: 2s;
+        }
+    }
+}

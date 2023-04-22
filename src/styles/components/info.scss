@@ -1,0 +1,26 @@
+.info {
+    @include flex-center;
+    height: 80vh;
+    background-image: url('../img/code_img.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    &__container {
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 3%;
+        background-color: $info-background;
+        border-radius: 3rem;        
+    }
+
+    &__title {
+        color: $font-color;
+        font-family: 'Raleway-bold';
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}

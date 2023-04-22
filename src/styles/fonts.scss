@@ -1,0 +1,39 @@
+// normal
+
+@font-face {
+    font-family: 'Raleway-light';
+    src: url(../fonts/Raleway-Light.ttf) format('truetype'),
+         url(../fonts/Raleway-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url(../fonts/Raleway-Regular.ttf) format('truetype'),
+         url(../fonts/Raleway-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url(../fonts/Raleway-Semibold.ttf) format('truetype'),
+         url(../fonts/Raleway-Semibold.woff) format('woff');
+}
+
+// italic
+
+@font-face {
+    font-family: 'Raleway-lightItalic';
+    src: url(../fonts/Raleway-LightItalic.ttf) format('truetype'),
+         url(../fonts/Raleway-LightItalic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-italic';
+    src: url(../fonts/Raleway-italic.ttf) format('truetype'),
+         url(../fonts/Raleway-italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-boldItalic';
+    src: url(../fonts/Raleway-SemiboldItalic.ttf) format('truetype'),
+         url(../fonts/Raleway-SemiboldItalic.woff) format('woff');
+}

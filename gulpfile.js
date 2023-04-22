@@ -12,7 +12,10 @@ import imageMin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import webpHTML from 'gulp-webp-html';
 import fonter from 'gulp-fonter';
+import concat from 'gulp-concat';
 
+const production = process.argv.includes("--production");
+const development = !production;
 const sass = gulpSass(VanillaSass);
 const {src, dest, watch, parallel, series, task} = gulp;
 const paths = {
@@ -45,10 +48,11 @@ const clear = () => {
 }
 
 const scss = () => {
-    return src(paths.styles.src, {sourcemaps : development})
+    return src(paths.styles.src, {sourcemaps : true})
+    .pipe(concat('main.scss'))
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(dest(paths.styles.dest, {sourcemaps : development}))
+    .pipe(dest(paths.styles.dest, {sourcemaps : true}))
     .pipe(liveServer.stream());
 }
 
@@ -113,9 +117,6 @@ const watcher = () => {
 
 
 // assembly
-
-const production = process.argv.includes("--production");
-const development = !production;
 
 const build = series(
     clear,

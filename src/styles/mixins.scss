@@ -1,0 +1,12 @@
+@mixin font-light {
+    font-family: 'Raleway-regular';
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: $font-color;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
