@@ -2,7 +2,19 @@
     font-family: 'Raleway-regular';
     text-transform: capitalize;
     font-size: 1.5rem;
-    color: $font-color;
+    color: $font-white;
+}
+
+@mixin font-light-italic {
+    font-family: 'Raleway-italic';
+    color: $font-white;
+}
+
+@mixin font-bold {
+    font-family: 'Raleway-bold';
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: $font-white;
 }
 
 @mixin flex-center {

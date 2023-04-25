@@ -1,0 +1,27 @@
+.goals {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-color: $background-dark;
+
+    &__container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    &__title {
+        font-family: 'Raleway-bold';
+        color: $font-white;
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    &__text {
+        @include font-light-italic;
+    }
+
+
+}

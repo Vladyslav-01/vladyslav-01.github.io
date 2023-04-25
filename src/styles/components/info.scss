@@ -4,23 +4,37 @@
     background-image: url('../img/code_img.jpg');
     background-size: cover ;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.7;
 
     &__container {
-        width: 80vw;
-        height: 60vh;
+        width: 60vw;
+        height: 50vh;
+        padding: 5% 0 0 5%;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        padding-left: 3%;
-        background-color: $info-background;
-        border-radius: 3rem;        
+        background-color: $background-info;
+        border-radius: 2.5rem;        
     }
 
     &__title {
-        color: $font-color;
+        color: $font-blue;
         font-family: 'Raleway-bold';
         font-size: 2.5rem;
         line-height: 4rem;
+    }
+
+    &__text {
+        @include font-light;
+        color: $font-yellow;
+    }
+
+    &__contacts {
+        @include font-bold;
+        font-size: 2rem;
+        color: $font-red;
+        display: flex;
+        flex-direction: column;
     }
 }
