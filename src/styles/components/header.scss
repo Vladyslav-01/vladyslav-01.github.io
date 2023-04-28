@@ -4,6 +4,9 @@
     align-items: center;
     height: 20vh;
     background-color: $background-dark;
+    position: sticky;
+    z-index: 2;
+    top: 0;
 
     &__logo {
         background-color: $white;
