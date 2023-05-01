@@ -9,10 +9,12 @@
 
     &__container {
         width: 70vw;
-        height: 50vh;
-        padding: 5%;
+        height: 60vh;
+        padding: 0 5%; 
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        gap: 2.5rem;
         box-sizing: border-box;
         background-color: $background-info;
         border-radius: 2.5rem;        
@@ -23,18 +25,53 @@
         font-family: 'Raleway-bold';
         font-size: 2.5rem;
         line-height: 4rem;
+
+        span {
+            font-family: 'Roboto';
+            color: $font-yellow;
+        }
     }
 
     &__text {
         @include font-light;
         color: $font-yellow;
+        margin-left: 2rem;
+
+        span {
+            font-family: 'Roboto';
+            font-weight: bold;
+            color: $font-blue;
+        }
     }
 
     &__contacts {
+        display: block;
+        background-color: saturate($color: #292929be, $amount: 0);
         @include font-bold;
+        line-height: 3rem;
         font-size: 2rem;
         color: $font-red;
+        border-radius: 2rem;
+        box-shadow: 0 0 4rem #171717ca;
+        margin-left: 4rem;
+        
         display: flex;
         flex-direction: column;
+
+        a {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        span {
+            font-family: 'Roboto';
+            font-weight: bold;
+            color: $font-yellow;
+        }
+
+        li span {
+            color: $font-white;
+        }
     }
 }

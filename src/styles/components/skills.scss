@@ -24,17 +24,41 @@
     &__list {
         padding: 5% 10%;
         display: grid;
-        grid-template-columns: 1fr 1fr;        
+        gap: 5%;
+        grid-template-columns: 1fr 1fr;       
+        box-sizing: border-box; 
         @include font-bold;
         color: $font-hover;
     }
 
     &__list-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+        progress[value] {
+            display: block;
+            width: 10rem;
+            height: 1.5rem;
+            // accent-color: black;
+            background-color: black;
+            // color: black;
+            // border-radius: 3rem;
+        }
+        // progress::-webkit-progress-bar {
+        //     accent-color: black;
+        //     background-color: yellow;
+        //     border-radius: 7px;
+        // }
+        //   progress::-webkit-progress-value {
+        //     background-color: blue;
+        //     border-radius: 7px;
+        //     box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+        //   }
     }
 
-        // &__item-progress {
-    
+        // &__item-progress[value] {
+        //     // background-color: aqua;
+        //     height: 2%;
         // }
 
 }
